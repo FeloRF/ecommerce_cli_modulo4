@@ -1,11 +1,9 @@
 package com.ecommerce.exception;
 
-/**
- * Excepcion lanzada cuando la cantidad en <=0.
- */
-public class CantidadInvalidaException {
-	public CantidadInvalidaException(String mensaje) {
+// Extendemos de RuntimeException para que no nos obligue a poner try-catch en todos lados
+public class CantidadInvalidaException extends RuntimeException {
+    
+    public CantidadInvalidaException(String mensaje) {
         super(mensaje);
     }
 }
-
